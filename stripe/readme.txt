@@ -2,8 +2,8 @@
 Contributors: wpsimplepay, am, benjaminprojas, smub
 Tags: stripe, stripe checkout, stripe payments, credit card payments, stripe gateway
 Requires at least: 5.9
-Tested up to: 6.8.2
-Stable tag: 4.15.0
+Tested up to: 6.8.3
+Stable tag: 4.16.1
 Requires PHP: 7.2
 License: GPLv2 or later
 
@@ -23,11 +23,14 @@ WP Simple Pay is a _standalone_ Stripe payments plugin that connects Stripe with
 
 - Integration with Stripe Checkout hosted payment forms
 - Accept credit and debit cards (Visa, Mastercard, American Express, Discover and Diners, and more) from global customers
-- Accept Alipay payments in Stripe from customers in China
+- Accept Alipay & WeChat Pay payments in Stripe from customers in China
+- Accept BECS Direct Debit payments in Stripe from customers in Australia
 - Accept FPX payments in Stripe from customers in Malaysia
 - Accept Giropay payments in Stripe from customers in Germany
 - Accept iDEAL payments in Stripe from customers in The Netherlands
+- Accept MobilePay payments in Stripe from customers in Denmark and Finland
 - Accept Przelewy24 (P24) in Stripe payments from customers in Poland
+- Accept PromptPay payments in Stripe from customers in Thailand
 - Custom branding on Stripe Checkout payment forms
 - Collect customer billing & shipping addresses in Stripe
 - Collect additional custom fields in Stripe Checkout
@@ -165,6 +168,22 @@ Give your European customers the option to pay directly from their bank accounts
 
 [View our SEPA Direct Debit template](https://wpsimplepay.com/template/sepa-direct-debit-form/?utm_source=wporg&utm_campaign=lite-plugin&utm_medium=link)
 
+=== 💳 Accept MobilePay Payments with Stripe ===
+
+Give your customers in Denmark and Finland the ability to pay with MobilePay, a popular digital wallet that offers a quick and secure way to make payments online.
+
+=== 💳 Accept BECS Direct Debit Payments with Stripe ===
+
+Offer your Australian customers the option to pay directly from their bank accounts. BECS Direct Debit is a popular and trusted payment method in Australia, ideal for recurring payments and subscriptions. 
+
+=== 💳 Accept PromptPay Payments with Stripe ===
+
+Enable customers in Thailand to pay instantly using their local bank app. PromptPay is a real-time payment system that provides a seamless and secure checkout experience.
+
+=== 💳 Accept WeChat Pay Payments with Stripe ===
+
+Tap into the vast market of Chinese consumers by offering WeChat Pay. As one of China's leading payment platforms, it allows customers to pay directly from their WeChat wallet.
+
 === 💳 Customized Payment Confirmation Details with Stripe ===
 
 Easily customize the credit card payment confirmation details your customers see within the post editor using placeholder tags.
@@ -183,7 +202,7 @@ Stripe currently supports 30+ languages, 45+ countries, and 135+ currencies. WP 
 
 === 📧 Get Help ===
 
-WP Simple Pay is backed by top-notch technical support from our globally distributed full-time support team. We also have an [extensive documentation site available](https://docs.wpsimplepay.com/?utm_source=wporg&utm_campaign=lite-plugin&utm_medium=link). If you’re looking for faster support via email, we encourage you to [purchase a WP Simple Pay Pro license](https://wpsimplepay.com/?utm_source=wporg&utm_campaign=lite-plugin&utm_medium=link).
+WP Simple Pay is backed by top-notch technical support from our globally distributed full-time support team. We also have an [extensive documentation site available](https://wpsimplepay.com/docs/?utm_source=wporg&utm_campaign=lite-plugin&utm_medium=link). If you’re looking for faster support via email, we encourage you to [purchase a WP Simple Pay Pro license](https://wpsimplepay.com/?utm_source=wporg&utm_campaign=lite-plugin&utm_medium=link).
 
 == Installation ==
 
@@ -202,7 +221,7 @@ Once activated, you can immediately start creating both one-time and subscriptio
 
 If you prefer installing manually, you can [download the plugin ZIP file here](https://downloads.wordpress.org/plugin/stripe.latest-stable.zip).
 
-Additional documentation at [docs.wpsimplepay.com](https://docs.wpsimplepay.com/?utm_source=wporg&utm_campaign=lite-plugin&utm_medium=link).
+Additional documentation at [wpsimplepay.com/docs](https://wpsimplepay.com/docs/?utm_source=wporg&utm_campaign=lite-plugin&utm_medium=link).
 
 == Frequently Asked Questions ==
 
@@ -270,11 +289,29 @@ No. WP Simple Pay is a standalone Stripe payments plugin and does not integrate 
 
 == Changelog ==
 
+= Stripe Payment Forms v4.16.1 – December 01, 2025 =
+
+* New: Added a “Display Type” setting to switch the payment method layout between Tabs and Accordion.
+* Update: Added the `simpay_show_card_field_label` filter to display a label for the Card Element field.
+* Fix: Ensured the email field is required on all payment forms.
+* Fix: Resolved an overlay modal visibility issue on payment forms.
+* Fix: Corrected label visibility for custom text fields in the form builder.
+* Fix: Fixed an issue where selecting multiple line items could trigger an invoice currency error.
+* Fix: Missing styles for datepicker field.
+
+= Stripe Payment Forms v4.16.0 – October 30, 2025 =
+
+* New: Added support for MobilePay, BECS Direct Debit, PromptPay, and WeChat Pay payment methods.
+* Update: Activity & Reports - Stripe Balance component now supports Test Mode.
+* Fix: Addressed an issue that incorrectly displayed an "invalid webhook" message.
+* Fix: Optimized the application fee removal process for Lite to Pro upgrades to prevent unnecessary API calls.
+* Dev: Updated Stripe integration for enhanced security and reliability.
+
 = Stripe Payment Forms v4.15.0 – August 13, 2025 =
 
-Update: Added more details to the System Report.
-Fix: Added support for 4-digit card numbers in the {card-last4} smart tag for Stripe Checkout one-time payments.
-Fix: Fixed incorrect frontend forms API URL when the wp-api script is deferred.
+* Update: Added more details to the System Report.
+* Fix: Added support for 4-digit card numbers in the {card-last4} smart tag for Stripe Checkout one-time payments.
+* Fix: Fixed incorrect frontend forms API URL when the wp-api script is deferred.
 
 = Stripe Payment Forms v4.14.3 - July 24, 2025 =
 
@@ -345,3 +382,4 @@ Fix: Fixed incorrect frontend forms API URL when the wp-api script is deferred.
 * i18n: Various changes for improved translations.
 * Dev: Remove legacy action: `simpay_subscription_created` → `simpay_webhook_subscription_created`.
 * Dev: Remove legacy action: `simpay_charge_created` → `simpay_webhook_payment_intent_succeeded`.
+
