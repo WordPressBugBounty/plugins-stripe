@@ -3,7 +3,7 @@ Contributors: wpsimplepay, am, benjaminprojas, smub
 Tags: stripe, stripe checkout, stripe payments, credit card payments, stripe gateway
 Requires at least: 5.9
 Tested up to: 7.0
-Stable tag: 4.17.2
+Stable tag: 4.17.3
 Requires PHP: 7.4
 License: GPLv2 or later
 
@@ -297,11 +297,15 @@ No. WP Simple Pay is a standalone Stripe payments plugin and does not integrate 
 
 == Changelog ==
 
-= Stripe Payment Forms 4.17.2 - May 20, 2026 =
+= Stripe Payment Forms 4.17.3 - June 16, 2026 =
 
-* New: Conditional logic for form fields. Show or hide fields dynamically based on the values of other fields, with support for multiple rules, all/any matching, and a wide range of operators.
-* New: Added `{billing-country}` and `{billing-zip}` smart tags for use in payment confirmation pages and emails.
-* Fix: Required fields are now automatically added for Overlay forms using Klarna, Afterpay/Clearpay, or automatic taxes.
+* New: PIX and BLIK payment methods for forms in Brazilian Real and Polish Złoty.
+* New: per-form setting to disable Stripe Link on Stripe Checkout (off-site) forms.
+* New: `[simpay_manage_subscriptions]` shortcode for the customer subscription portal in the Classic Editor.
+* Update: BECS Direct Debit can now be used for subscriptions and recurring payments on AU/AUD forms.
+* Fix: Duplicated forms no longer share the original's Stripe Product and Price IDs.
+* Fix: Form-style error color now applies to validation errors and required-field highlights.
+* Fix: Action Scheduler no longer creates duplicate entries when requests arrive concurrently.
 
 = Stripe Payment Forms 4.17.1 - April 9, 2026 =
 
