@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wpsimplepay/wp-simple-pay-pro-3',
-        'pretty_version' => 'dev-hotfix/4.17.4.1',
-        'version' => 'dev-hotfix/4.17.4.1',
-        'reference' => '088ef7d7297110dcd2e084a3d5d97333589f5fec',
+        'pretty_version' => 'dev-release/4.17.5',
+        'version' => 'dev-release/4.17.5',
+        'reference' => '007685f5d49aeb259f7d0f8eb80163d522a4e809',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -83,9 +83,9 @@
             'dev_requirement' => false,
         ),
         'symfony/polyfill-php80' => array(
-            'pretty_version' => 'v1.37.0',
-            'version' => '1.37.0.0',
-            'reference' => 'dfb55726c3a76ea3b6459fcfda1ec2d80a682411',
+            'pretty_version' => 'v1.43.0',
+            'version' => '1.43.0.0',
+            'reference' => '9c6a5d6b01ca51d486c813e9a9c0ed55f208bb74',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/polyfill-php80',
             'aliases' => array(),
@@ -110,9 +110,9 @@
             'dev_requirement' => false,
         ),
         'wpsimplepay/wp-simple-pay-pro-3' => array(
-            'pretty_version' => 'dev-hotfix/4.17.4.1',
-            'version' => 'dev-hotfix/4.17.4.1',
-            'reference' => '088ef7d7297110dcd2e084a3d5d97333589f5fec',
+            'pretty_version' => 'dev-release/4.17.5',
+            'version' => 'dev-release/4.17.5',
+            'reference' => '007685f5d49aeb259f7d0f8eb80163d522a4e809',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
