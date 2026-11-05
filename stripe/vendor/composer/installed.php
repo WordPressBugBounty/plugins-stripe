@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wpsimplepay/wp-simple-pay-pro-3',
-        'pretty_version' => 'dev-release/4.17.5',
-        'version' => 'dev-release/4.17.5',
-        'reference' => '007685f5d49aeb259f7d0f8eb80163d522a4e809',
+        'pretty_version' => 'dev-release/4.17.6',
+        'version' => 'dev-release/4.17.6',
+        'reference' => '6e0509d3dc74db56adc7ffce30b58411fe02fe57',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -110,9 +110,9 @@
             'dev_requirement' => false,
         ),
         'wpsimplepay/wp-simple-pay-pro-3' => array(
-            'pretty_version' => 'dev-release/4.17.5',
-            'version' => 'dev-release/4.17.5',
-            'reference' => '007685f5d49aeb259f7d0f8eb80163d522a4e809',
+            'pretty_version' => 'dev-release/4.17.6',
+            'version' => 'dev-release/4.17.6',
+            'reference' => '6e0509d3dc74db56adc7ffce30b58411fe02fe57',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
