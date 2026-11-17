@@ -3,7 +3,7 @@ Contributors: wpsimplepay, am, benjaminprojas, smub
 Tags: stripe, stripe checkout, stripe payments, credit card payments, stripe gateway
 Requires at least: 5.9
 Tested up to: 7.1
-Stable tag: 4.17.6
+Stable tag: 4.17.7
 Requires PHP: 7.4
 License: GPLv2 or later
 
@@ -324,6 +324,17 @@ No. WP Simple Pay is a standalone Stripe payments plugin and does not integrate 
 12. Global payment form settings: Summary report email
 
 == Changelog ==
+
+= Stripe Payment Forms 4.17.7 - November 17, 2026 =
+
+* Fix: The custom amount field shows a decimal keypad on iPhone, and amounts typed with either decimal separator are read correctly.
+* Fix: Choosing a price option no longer makes the page jump toward the submit button.
+* Fix: WP Simple Pay settings no longer grow very large over time and slow down the site.
+* Fix: The default Payment Notification email shows bold text instead of raw HTML tags.
+* Fix: Forms shown more than once on a page now work in every copy, including labels, date pickers, overlay buttons and form styles.
+* Fix: Payment form previews no longer cause errors when plugins such as Popup Maker are active.
+* Fix: Payments from other Stripe plugins, such as Restrict Content Pro, no longer add warnings to the error log.
+* Fix: Prevent a critical error on WordPress.com sites using Jetpack.
 
 = Stripe Payment Forms 4.17.6 - November 5, 2026 =
 
